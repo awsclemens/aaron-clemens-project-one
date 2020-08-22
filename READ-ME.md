@@ -8,5 +8,5 @@
     1. sets the "article-info" to absolute and its parent to relative
     2. I position the child's top:50% to move it DOWN whereby its top edge is now vertically centered
     3. I readjust the child UP by half its own height to place it's vertical center on its former top edge position, which now vertically centers the entire element against the parent. I used transform:traslate(-50%) to achieve this adjustment IN REFERENCE TO ITS OWN HEIGHT.
-    4. LINK to my work in codepen on this issue: https://codepen.io/ac_lemens/pen/gOrgpep
+    4. LINK to my work in codepen on this issue: https://codepen.io/ac_lemens/pen/gOrgpep -AC
     
