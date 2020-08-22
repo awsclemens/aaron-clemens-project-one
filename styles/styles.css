@@ -6,6 +6,13 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
+/* Color Palette
+#201E21 Dark
+#0178A5 Ocean blue 
+#A7059B Barney purple 
+#FFE9E9 Very light pink 
+#F7DAE8 Light pink  */
+
 /**********************/
 /*<< general styles >>*/
 /**********************/
@@ -23,7 +30,7 @@ img {
 
 .wrapper {
     width: 80%;
-    max-width: 1200px;
+    max-width: 1275px;
     margin: 0 auto;
 }
 
@@ -106,8 +113,13 @@ h3 a {
     letter-spacing: normal;
     font-family: 'East Sea Dokdo', cursive;
     font-weight: 400;
-    text-align: center;
+    /* text-align: center; */
     color:black;
+}
+
+i.far {
+    font-size: 7rem;
+    color:#0178A5;
 }
 
 /**************/
@@ -133,6 +145,8 @@ h1 {
     margin-top: calc((100vh - 25px - 39px - 94.3px)/2);
 }
 
+
+
 /********************/
 /*<< new-products >>*/
 /********************/
@@ -147,11 +161,12 @@ section.new-products {
 .new-products-content img {
     float:left;
     width:25%;
+    margin-right:40px
 }
 
 .new-products-content article {
     float:left;
-    width: 75%;
+    width: calc(75% - 40px);
 }
 
 .new-products-content h2 {
@@ -174,9 +189,41 @@ section.new-products {
 /*******************/
 /*<< exhibitions >>*/
 /*******************/
-/******************/
+/*<< latest-exhibitions >>*/
+.latest-exhibitions {
+    background-color: #F7DAE8;
+    padding:120px 0;
+}
+
+.latest-exhibitions h2 {
+    text-align: center;
+    margin-bottom:80px;
+}
+
+.gallery li {
+    float: left;
+    margin-right:40px;
+    width:calc((100% - 80px) / 3);
+}
+
+.gallery li:last-child {
+    margin-right:0;
+}
+
 /*<< icon-links >>*/
-/******************/
+.icon-links {
+    padding: 80px 0;
+    border: 1px solid blue;
+}
+ul.exhibition-icons > li {
+    float:left;
+    border: 1px solid red;
+    text-align: center;
+}
+
+
+
+
 /****************/
 /*<< articles >>*/
 /****************/

@@ -1,0 +1,2 @@
+2020-08-22 "Note about Font Awesome Icons"
+    -fa-images, fa-calendar-alt, and fa-handshake are currently regular weight icons, the light weight icons are available only to PRO subscribers.  Ligh weight appears to be the best match for the design given.  I have chosen for this project to use the regular weight icons, as I do not have the PRO subscription yet. -AC
