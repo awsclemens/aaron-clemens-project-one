@@ -16,7 +16,6 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 /**********************/
 /*<< general styles >>*/
 /**********************/
-
 /*Set initial font to 62.5% (10px)*/
 html {
     font-size: 62.5%;
@@ -30,13 +29,14 @@ img {
 
 .wrapper {
     width: 80%;
-    max-width: 1275px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 span.nobreak {
     white-space: nowrap;
 }
+
 /* stripping styles */
 ul {
     list-style:none;
@@ -68,10 +68,9 @@ ul {
 /******************/
 /*<< typography >>*/
 /******************/
-
 body {
-    font-size: calc(1.8rem + (100vw - 941px)*((20 - 18)/(1500 - 941)));
-    line-height: calc(27px + (100vw - 941px)*((29 - 27)/(1500 - 941)));
+    font-size: 2rem;
+    line-height: 29px;
     letter-spacing: 0.2px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -109,7 +108,7 @@ h1 {
 }
 
 h2 {
-    font-size: calc(5.1rem + (100vw - 941px)*((75 - 51)/(1500 - 941)));
+    font-size: 7.5rem;
     line-height: 3.6rem;
     letter-spacing: normal;
     font-family: 'East Sea Dokdo', cursive;
@@ -118,20 +117,18 @@ h2 {
 
 h3,
 h3 a {
-    font-size: calc(4rem + (100vw - 941px)*((55 - 40)/(1500 - 941)));
+    font-size: 5.5rem;
     line-height: 3.6rem;
     letter-spacing: normal;
     font-family: 'East Sea Dokdo', cursive;
     font-weight: 400;
-    /* text-align: center; */
     color:black;
 }
 
 i.far {
-    font-size: calc(5rem + (100vw - 941px)*((70 - 50)/(1500 - 941)));
+    font-size: 7rem;
     color:#0178A5;
 }
-
 
 /**************/
 /*<< header >>*/
@@ -168,7 +165,7 @@ h1 {
 /*<< new-products >>*/
 /********************/
 section.new-products {
-    padding:calc(75px + (100vw - 941px)*((100 - 75)/(1500 - 941))) 0;
+    padding:100px 0;
 }
 
 .new-products-content {
@@ -177,13 +174,13 @@ section.new-products {
 
 .new-products-content img {
     float:left;
-    width:calc(300px + (100vw - 941px)*((310 - 300)/(1500 - 941)));
-    margin-right:calc(20px + (100vw - 941px)*((30 - 20)/(1500 - 941)));
+    width:340px;
+    margin-right:40px;
 }
 
 .new-products-content article {
     float:left;
-    width: calc(100% - calc(320px + (100vw - 941px)*((340 - 320)/(1500 - 941))));
+    width: calc(100% - 380px);
 }
 
 .new-products-content h2 {
@@ -210,12 +207,12 @@ section.new-products {
 /*<< latest-exhibitions >>*/
 .latest-exhibitions {
     background-color: #F7DAE8;
-    padding:calc(60px + (100vw - 941px)*((120 - 60)/(1500 - 941))) 0;
+    padding:120px;
 }
 
 .latest-exhibitions h2 {
     text-align: center;
-    margin-bottom:calc(40px + (100vw - 941px)*((80 - 40)/(1500 - 941)));
+    margin-bottom:80px;
 }
 
 .gallery li {
@@ -263,25 +260,25 @@ ul.exhibition-icons a {
 }
 
 .article-info {
-    width:45%;
+    width:550px;
     position:absolute;
     top:50%;
     transform: translateY(-50%);
 }
 
 .article-info h2 {
-    line-height:calc(34px + (100vw - 941px)*((56 - 34)/(1500 - 941)));
+    line-height:56px;
 }
 
 .article-info p {
-    margin-top:calc(3px + (100vw - 941px)*((10 - 3)/(1500 - 941)));
+    margin-top:10px;
 }
 
 .article-info a {
     display: inline-block;
     background-color: #A7059B;
     padding: 10px 20px;
-    margin-top:calc(0px + (100vw - 941px)*((30 - 0)/(1500 - 941)));
+    margin-top:30px;
 }
 
 .article-image-left {
@@ -294,7 +291,7 @@ ul.exhibition-icons a {
     float:right;
     right:0;
 }
-
+/* ********************************************************************************* */
 /********************/
 /*<< stay-updated >>*/
 /********************/
@@ -309,8 +306,6 @@ ul.exhibition-icons a {
 .stay-updated h2 {
     text-align: center;
     margin-bottom:20px;
-    
-
 }
 
 .stay-updated nav {
@@ -364,12 +359,9 @@ button:hover {
 }
 
 .contact h3 {
-    margin-bottom: calc(0px + (100vw - 941px)*((20 - 0)/(1500 - 941)));
+    margin-bottom: 20px;
 }
-
-
-
-
+/* ***************************************************************************** */
 /**************/
 /*<< footer >>*/
 /**************/
@@ -387,3 +379,94 @@ footer {
 /*********************/
 /*<< media queries >>*/
 /*********************/
+/*<< variable growth for DESKTOP up to max wrapper(1300px) >>*/
+@media(max-width:1625px){
+    /* Up to 1625px typography */
+    body {
+        font-size: calc(1.8rem + (100vw - 941px)*((20 - 18)/(1625 - 941)));
+        line-height: calc(27px + (100vw - 941px)*((29 - 27)/(1625 - 941)));
+    } 
+    h2 {
+    font-size: calc(5.1rem + (100vw - 941px)*((75 - 51)/(1625 - 941)));
+    }
+    h3,
+    h3 a {
+    font-size: calc(4rem + (100vw - 941px)*((55 - 40)/(1625 - 941)));
+    }
+    i.far {
+    font-size: calc(5rem + (100vw - 941px)*((70 - 50)/(1625 - 941)));
+    }
+    /* Up to 1625px new-products */
+    section.new-products {
+    padding:calc(75px + (100vw - 941px)*((100 - 75)/(1625 - 941))) 0;
+    }
+    .new-products-content img {
+    width:calc(300px + (100vw - 941px)*((340 - 300)/(1625 - 941)));
+    margin-right:calc(20px + (100vw - 941px)*((40 - 20)/(1625 - 941)));
+    }
+    .new-products-content article {
+    width: calc(100% - calc(320px + (100vw - 941px)*((380 - 320)/(1625 - 941))));
+    }
+    /* Up to 1625px latest-exhibitions */
+    .latest-exhibitions {
+    padding:calc(60px + (100vw - 941px)*((120 - 60)/(1625 - 941))) 0;
+    }
+    .latest-exhibitions h2 {
+    margin-bottom:calc(40px + (100vw - 941px)*((80 - 40)/(1625 - 941)));
+    }
+    /* Up to 1625px articles */
+    .article-info {
+    width:calc(338px + (100vw - 941px)*((550 - 338)/(1625 - 941)));
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    } 
+    .article-info h2 {
+    line-height:calc(34px + (100vw - 941px)*((56 - 34)/(1625 - 941)));
+    }
+    .article-info p {
+    margin-top:calc(3px + (100vw - 941px)*((10 - 3)/(1625 - 941)));
+    } 
+    .article-info a {
+    margin-top:calc(0px + (100vw - 941px)*((30 - 0)/(1625 - 941)));
+    }   
+    /* Up to 1625px stay-updated */
+    .contact h3 {
+    margin-bottom: calc(0px + (100vw - 941px)*((20 - 0)/(1625 - 941)));
+    }
+
+    
+}
+
+/*<< PORTRAIT TABLET - SMALL DESKTOPS >>*/
+@media(max-width:940px){
+    /* Up to 940px typography */
+    /* Up to 940px header */
+    /* Up to 940px new-products */
+    /* Up to 940px latest-exhibitions */
+    /* Up to 940px icon-links */
+    /* Up to 940px articles */
+    /* Up to 940px stay-tuned */
+}
+
+/*<< LANDSCAPE PHONT - PORTRAIT TABLET >>*/
+@media(max-width:768px){
+    /* Up to 768px typography */
+    /* Up to 768px header */
+    /* Up to 768px new-products */
+    /* Up to 768px latest-exhibitions */
+    /* Up to 768px icon-links */
+    /* Up to 768px articles */
+    /* Up to 768px stay-tuned */
+}
+
+/*<< PORTRAIT PHONES - SOME LANDSCAPE PHONES >>*/
+@media(max-width:480px){
+    /* Up to 480px typography */
+    /* Up to 480px header */
+    /* Up to 480px new-products */
+    /* Up to 480px latest-exhibitions */
+    /* Up to 480px icon-links */
+    /* Up to 480px articles */
+    /* Up to 480px stay-tuned */
+}
