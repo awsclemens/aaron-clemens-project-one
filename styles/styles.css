@@ -44,6 +44,11 @@ a {
     display:block;
 }
 
+button,
+input {
+    border: none;
+}
+
 a,
 body,
 h1,
@@ -71,7 +76,8 @@ body {
     color:black;
 }
 
-a {
+a,
+button {
     font-size: 4.5rem;
     line-height: 2.9rem;
     letter-spacing: normal;
@@ -107,6 +113,7 @@ h2 {
     font-weight: 400;
 }
 
+h3,
 h3 a {
     font-size: 5.5rem;
     line-height: 3.6rem;
@@ -122,6 +129,7 @@ i.far {
     color:#0178A5;
 }
 
+
 /**************/
 /*<< header >>*/
 /**************/
@@ -132,20 +140,18 @@ header {
     padding-top:25px;
 }
 
-nav li {
+header nav li {
     float:left;
     margin-right:50px;
 }
 
 nav a {
-    padding: 5px 10px;
+    padding: 2.5px 10px;
 }
 
 h1 {
     margin-top: calc((100vh - 25px - 39px - 94.3px)/2);
 }
-
-
 
 /********************/
 /*<< new-products >>*/
@@ -175,7 +181,7 @@ section.new-products {
 }
 
 .new-products-content p {
-    margin: 36px 0 49px 0 ;
+    margin: 50px 0 40px 0 ;
 }
 
 .new-products-content a {
@@ -233,7 +239,6 @@ ul.exhibition-icons a {
 /****************/
 .articles article {
     background-color:#F7DAE8;
-    /* clear:both; */
 }
 
 .article-image-right {
@@ -278,17 +283,82 @@ ul.exhibition-icons a {
     right:0;
 }
 
-
-
-
-
-
-
-
-
 /********************/
 /*<< stay-updated >>*/
 /********************/
+.stay-updated {
+    padding: 50px 0;
+}
+
+.stay-updated .wrapper {
+    position:relative;
+}
+
+.stay-updated h2 {
+    text-align: center;
+    margin-bottom:20px;
+    
+
+}
+
+.stay-updated nav {
+    float:left;
+    width:25%;
+}    
+
+.stay-updated nav a {
+    display:inline-block;
+}
+
+.subscribe-form {
+    text-align: center;
+    width:50%;
+    position:absolute;
+    bottom:0;
+    left:25%;
+}
+
+.subscribe-form > * {
+    display:block;
+}
+
+.subscribe-form label {
+    margin-bottom:20px;
+}
+
+.user-input input {
+    
+    height:39px;
+    width:calc(100% - 145.767px);
+    padding:10px 20px;
+    float:left;
+}
+
+.user-input button {
+    background:#0178A5;
+    padding: 5px 10px;
+    float:left;
+}
+
+button:hover {
+    cursor:pointer;
+}
+
+.contact {
+    width:25%;
+    text-align: right;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+.contact h3 {
+    margin-bottom: 20px;
+}
+
+
+
+
 /**************/
 /*<< footer >>*/
 /**************/
