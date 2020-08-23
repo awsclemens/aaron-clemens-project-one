@@ -141,9 +141,12 @@ header {
     background-image:url(../assets/group-4@2x.png);
     background-size:cover;
     padding-top:25px;
-    position:relative;
 }
 
+header .wrapper {
+    position:relative;
+    height:calc(100vh - 50px);
+}
 
 header nav li {
     float:left;
@@ -155,10 +158,10 @@ nav a {
 }
 
 h1 {
-    position:absolute;
+    position: absolute;
     left:0;
-    bottom:calc((100% - 59px)/2);
-    transform: translateY(50%);
+    bottom:calc(50% + 17px);
+    transform:translateY(50%);
 }
 
 /********************/
@@ -167,7 +170,7 @@ h1 {
 section.new-products {
     padding:calc(75px + (100vw - 941px)*((100 - 75)/(1500 - 941))) 0;
 }
-/* STOPE HERE */
+
 .new-products-content {
     position:relative; 
 }

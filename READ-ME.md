@@ -10,12 +10,17 @@
     3. I readjust the child UP by half its own height to place it's vertical center on its former top edge position, which now vertically centers the entire element against the parent. I used transform:traslate(-50%) to achieve this adjustment IN REFERENCE TO ITS OWN HEIGHT.
     4. LINK to my work in codepen on this issue: https://codepen.io/ac_lemens/pen/gOrgpep -AC
     
-2020-08-23 " Note about variable font size calculation"
+2020-08-23 "Note about variable font size calculation"
     -here is my formula for calculating font size that can adapt to the screen size in expected and controlled ways:
 
         font-size = initial font size + (100vw - initial screen width)*(goal font size - intial font size / goal screen size - initial screen size)
 
     -can also be used to create variable margins,padding,line height, or image widths
+    -AC
+
+2020-08-23 "Note about using span.nobreak"
+    -I have found a way to use the white-space property to help control word breaks in the contact area of the "stay-updated" section.
+    -Set white-space to nowrap on a span to contain the words you want to prevent breaking prematurely.  Using this as a general style similar to wrapper
     -AC
 
 
