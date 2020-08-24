@@ -65,6 +65,10 @@ ul {
     padding:0;
 }
 
+i.fa-bars {
+    display:none;
+}
+
 /******************/
 /*<< typography >>*/
 /******************/
@@ -100,7 +104,7 @@ nav a {
 
 h1 {
     font-size:12.2rem;
-    line-height: 9.43rem;
+    line-height: 94.3px;
     letter-spacing: normal;
     font-family: 'East Sea Dokdo', cursive;
     font-weight: 400;
@@ -109,7 +113,7 @@ h1 {
 
 h2 {
     font-size: 7.5rem;
-    line-height: 3.6rem;
+    line-height: 36px;
     letter-spacing: normal;
     font-family: 'East Sea Dokdo', cursive;
     font-weight: 400;
@@ -123,6 +127,11 @@ h3 a {
     font-family: 'East Sea Dokdo', cursive;
     font-weight: 400;
     color:black;
+}
+
+i.fa-bars {
+    font-size: 3.5rem;
+    color:white;
 }
 
 i.far {
@@ -157,7 +166,7 @@ nav a {
 h1 {
     position: absolute;
     left:0;
-    top:calc(50%);
+    top:50%;
     transform:translateY(calc(-50% + 17px));
 }
 /* ******************************************************************************** */
@@ -456,9 +465,6 @@ footer {
     h2 {
         font-size: 5.1rem;
     }
-    .new-products h2 {
-        letter-spacing:calc(-1.6px + (100vw - 769px)*((1 - -1.6)/(940 - 769)));
-    }
     h3,
     h3 a {
     font-size: 4rem;;
@@ -475,6 +481,9 @@ footer {
     height:calc(80vh - 50px);
     }
     /* Up to 940px new-products */
+    .new-products h2 {
+        letter-spacing:calc(-1.6px + (100vw - 769px)*((1 - -1.6)/(940 - 769)));
+    }
     /* Up to 940px latest-exhibitions */
     .latest-exhibitions {
     padding:60px 0;
@@ -523,18 +532,181 @@ footer {
     }
     .stay-updated {
     padding: calc(40px + (100vw - 769px)*((50 - 40)/(940 - 769))) 0;
-}
+    }
 }
 
-/*<< LANDSCAPE PHONT - PORTRAIT TABLET >>*/
+/*<< LANDSCAPE PHONE - PORTRAIT TABLET >>*/
 @media(max-width:768px){
     /* Up to 768px typography */
+    body {
+        font-size:1.6rem;
+    }
+    h2 {
+    font-size: 7.5rem;
+    }
+    h3,
+    h3 a {
+    font-size: 5.5rem;
+    }
     /* Up to 768px header */
+    header {
+    height:75vh;
+    padding-top:0;
+    background-position:42%;
+    }
+    header .wrapper {
+    height:75vh;
+    }
+    header .fa-bars {
+        display: initial;
+        position:absolute;
+        right:0;
+        top:15px;
+    }
+    header nav {
+        display:none;
+    }
+    h1 {
+    line-height:65px;
+    transform:translateY(-50%);
+    }
     /* Up to 768px new-products */
+    section.new-products {
+        padding: calc(50px + (100vw - 481px)*((68 - 50)/(768 - 481))) 0;
+    }
+    .new-products-content img {
+        width:100%;
+        height:50%;
+        object-fit:cover;
+        float:none;
+        margin-right:0;
+    }
+    .new-products-content article {
+        float:none;
+        width: 100%;
+    }
+    .new-products-content h2 {
+        letter-spacing:normal;
+        line-height: 58px;
+        position:static;
+        margin:40px 0;
+    }
+    .new-products-content p {
+        margin-top:0;
+        margin-bottom:40px
+    }
+    .new-products-content a {
+        display:inline-block;
+        position:static;
+        margin-left:50%;
+        margin-bottom: 80px;
+        transform: translateX(-50%);
+    }
     /* Up to 768px latest-exhibitions */
+    .gallery li {
+        width: calc((100% - 20px)/2);
+    }
+    .gallery li:nth-last-child(2) {
+        margin-right:0;
+    }
+    .gallery li:last-child {
+        display:none;
+    }
     /* Up to 768px icon-links */
+    .icon-links {
+        padding:25px 0;
+    }
+    ul.exhibition-icons > li {
+        float:none;
+        width:100%;
+        margin:30px 0;
+    }
+    ul.exhibition-icons .far {
+        font-size: 7rem;
+    }
     /* Up to 768px articles */
+    .article-image-right {
+        float:none;
+        width:100%;
+    }
+    .article-info {
+        position:static;
+        transform:none;
+        width: 100%;
+        text-align: center;
+        padding: 40px 0;
+    }
+    .article-info h2{
+        font-size: 7.5rem;
+        line-height: 60px;
+        letter-spacing:normal;
+    }
+    .article-info p {
+        margin:20px 0;
+        padding:0;
+    }
+    .article-info a {
+        position:static;
+    }
+    .article-image-left {
+        float:none;
+        width:100%;
+    }
     /* Up to 768px stay-tuned */
+    .stay-updated {
+        padding: 40px 0;
+        position:relative;
+    }
+    .stay-updated .wrapper {
+        position:initial;
+    }
+    .stay-updated h2 {
+        margin-top:calc(40px + 34px);
+        margin-bottom:30px;
+    }
+    .stay-updated nav {
+        float:none;
+        width:calc(90% + 20px);
+        position:absolute;
+        top:40px;
+        left:calc(5% - 10px);
+    }
+    .stay-updated nav li {
+        float:left;
+        margin-right:calc((100% - 74.5333px - 61.2333px - 83.7px - 91.5333px)/3);
+        
+    }
+    .stay-updated nav li:last-child {
+        margin-right:0;
+    }
+    .stay-updated form {
+        position:static;
+        width:100%;
+    }
+    .subscribe-form label {
+        margin:0;
+    }
+    .user-input input {
+        float:none;
+        width: 85%;
+        text-align: center;
+        margin:20px 0;
+
+    }
+    .user-input button {
+        float:none;
+        width: initial;
+        margin-bottom:40px;
+
+    }
+    .stay-updated .contact {
+        position:static;
+        width: 100%;
+        text-align: center;
+    }
+    .contact h3 {
+        margin-bottom: 10px;
+    }
 }
 
 /*<< PORTRAIT PHONES - SOME LANDSCAPE PHONES >>*/

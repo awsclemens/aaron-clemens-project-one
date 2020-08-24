@@ -23,5 +23,14 @@
     -Set white-space to nowrap on a span to contain the words you want to prevent breaking prematurely.  Using this as a general style similar to wrapper
     -AC
 
+2020-08-23 "Note about menu font-awesome icon"
+- I have chosen the SOLID bars from font-awesome as they are free, and I do not have access yet to the pro options.  I am aware that the design best matches the LIGHT bars from font-awesome, and would be changed to them in the real world, where I'm making money to pay for this account
+-AC
+
+2020-08-23 "Note about asset image-6@2x.png"
+- This image in our assets folder does not match the design image, and cannot be adjusted to match the photo contents.
+-AC
+
+
 
     
