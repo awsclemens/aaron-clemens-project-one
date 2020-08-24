@@ -15,7 +15,7 @@
             <nav>
                 <ul class="clearfix">
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
                         <a href="#about">About</a>
@@ -24,7 +24,7 @@
                         <a href="#blog">Blog</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact-us">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -33,7 +33,7 @@
     </header>
 
     <main>
-        <section class="new-products">
+        <section class="new-products" id="about">
             <div class="wrapper">
                 <div class="new-products-content clearfix">
                     <img src="./assets/image-6@2x.png" alt="see-through bottles of colorful paints arranged across a wooden shelf.">
@@ -46,7 +46,7 @@
             </div><!--<< END wrapper >>-->
         </section><!--<< END new-products section >>-->
 
-        <section class="exhibitions">
+        <section class="exhibitions" id="our-gallery">
             <div class="latest-exhibitions">
                 <div class="wrapper">
                     <h2>Latest exhibitions</h2>
@@ -102,7 +102,7 @@
             </div><!--<< END icon-links >>-->
         </section><!--<< END exhibitions section >>-->
 
-        <section class="articles">
+        <section class="articles" id="blog">
             <article class="brushes clearfix">
                 <img src="./assets/right-image@2x.png" alt="colorful paint covered brush heads on table, viewed from above." class="article-image-right">
                 <div class="wrapper clearfix">
@@ -132,27 +132,27 @@
                 <nav>
                     <ul class="clearfix">
                         <li>
-                            <a href="">Home</a>
+                            <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="">Blog</a>
+                            <a href="#blog">Blog</a>
                         </li>
                         <li>
-                            <a href="">Gallery</a>
+                            <a href="#our-gallery">Gallery</a>
                         </li>
                         <li>
-                            <a href="">Contact</a>
+                            <a href="#contact-us">Contact</a>
                         </li>
                     </ul>
                 </nav>
                 <form action="#" class="subscribe-form" method="POST">
-                    <label for="user-email">Subscribe to our newsletter to stay updated.</label>
+                    <label for="user-email">Subscribe to our newsletter <span class="nobreak">to stay updated.</span></label>
                     <div class="user-input clearfix">
                         <input type="email" id="user-email" name="user-email-newsletter" placeholder="email address" required>
                         <button type="submit" aria-label="subscribe to our newsletter">subscribe</button>
                     </div>
                 </form>
-                <div class="contact">
+                <div class="contact" id="contact-us">
                     <h3>Contact</h3>
                     <p>info@email.com | <span class="nobreak">123 - 456 - 7890</span></p>
                     <p>123 some road, <span class="nobreak">Toronto, ON</span></p>

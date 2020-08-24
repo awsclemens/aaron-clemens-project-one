@@ -92,6 +92,18 @@ button {
     color:white;
 }
 
+.new-products a:hover,
+.new-products a:focus,
+.article-info a:hover,
+.article-info a:focus {
+    box-shadow:5px 5px 3px #201E21;
+}
+
+button[type=submit]:hover,
+button[type=submit]:focus {
+    background-color: #201E21;
+}
+
 nav a {
     font-size: 2rem;
     line-height: 2.9rem;
@@ -99,7 +111,16 @@ nav a {
     font-family: 'Roboto', cursive;
     font-weight:500;
     color:black;
+}
 
+nav a:hover,
+nav a:focus,
+h3 a:hover,
+h3 a:focus {
+    background-image: linear-gradient(to right,#0178A5,#A7059B);
+    background-position:50% 95%;
+    background-size: 70% 3px;
+    background-repeat:no-repeat;
 }
 
 h1 {
@@ -132,6 +153,12 @@ h3 a {
 i.fa-bars {
     font-size: 3.5rem;
     color:white;
+}
+
+i.fa-bars:hover,
+i.fa-bars:focus {
+    cursor:pointer;
+    transform:scale(1.2);
 }
 
 i.far {
@@ -598,9 +625,10 @@ footer {
     .new-products-content a {
         display:inline-block;
         position:static;
+        transform: translateX(-50%);
         margin-left:50%;
         margin-bottom: 80px;
-        transform: translateX(-50%);
+        
     }
     /* Up to 768px latest-exhibitions */
     .gallery li {
@@ -712,11 +740,46 @@ footer {
 /*<< PORTRAIT PHONES - SOME LANDSCAPE PHONES >>*/
 @media(max-width:480px){
     /* Up to 480px typography */
+    h1 {
+        font-size: calc(10rem + (100vw - 320px)*((122 - 100)/(480 - 320)));
+        width: 240px;
+        line-height: calc(55px + (100vw - 320px)*((65 - 55)/(480 - 320)));
+    }
+    h2 {
+        font-size: calc(6rem + (100vw - 320px)*((75 - 60)/(480 - 320)));
+        
+    }
     /* Up to 480px header */
+    header {
+        background-position:42%;
+    }
     /* Up to 480px new-products */
+    .new-products-content article {
+        position:relative;
+    }
+    .new-products-content h2 {
+        line-height: calc(46px + (100vw - 320px)*((58 - 46)/(480 - 320)));
+        margin: 30px 0;
+    }
+    .new-products-content p {
+        margin-bottom:30px;
+    }
+    .new-products-content a {
+        margin-bottom:40px;
+        margin-left:calc((100% - 172.267px)/2);
+        transform:none;
+    }
     /* Up to 480px latest-exhibitions */
+    .latest-exhibitions h2 {
+        font-size: calc(5.2rem + (100vw - 320px)*((75 - 52)/(480 - 320)));
+    }
     /* Up to 480px icon-links */
     /* Up to 480px articles */
-    /* Up to 480940
-    px stay-tuned */
+    .article-info h2 {
+        font-size:calc(7.1rem + (100vw - 320px)*((75 - 71)/(480 - 320)));
+    }
+    /* Up to 480px stay-tuned */
+    .user-input input {
+        width:100%;
+    }
 }
