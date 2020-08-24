@@ -65,7 +65,7 @@ ul {
     padding:0;
 }
 
-i.fa-bars {
+header label[for="menu-toggle"] {
     display:none;
 }
 
@@ -165,7 +165,7 @@ i.far {
     font-size: 7rem;
     color:#0178A5;
 }
-/* ******************************************************************************* */
+
 /**************/
 /*<< header >>*/
 /**************/
@@ -196,7 +196,7 @@ h1 {
     top:50%;
     transform:translateY(calc(-50% + 17px));
 }
-/* ******************************************************************************** */
+
 /********************/
 /*<< new-products >>*/
 /********************/
@@ -584,7 +584,7 @@ footer {
     header .wrapper {
     height:75vh;
     }
-    header .fa-bars {
+    header label[for="menu-toggle"] {
         display: initial;
         position:absolute;
         right:0;
@@ -607,7 +607,6 @@ footer {
         max-height:600px;
         overflow:hidden;
     }
-
     .new-products-content img {
         width:100%;
         float:none;
