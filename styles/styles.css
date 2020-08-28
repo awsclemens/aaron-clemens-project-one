@@ -707,7 +707,9 @@ footer {
     }
     .stay-updated nav li {
         float:left;
-        margin-right:calc((100% - 74.5333px - 61.2333px - 83.7px - 91.5333px)/3);
+        width:92px;
+        /* margin-right:calc((100% - 74.5333px - 61.2333px - 83.7px - 91.5333px)/3); */
+        margin-right:calc((100% - 92px - 92px - 92px - 92px)/3);
         
     }
     .stay-updated nav li:last-child {
