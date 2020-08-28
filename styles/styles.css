@@ -707,13 +707,23 @@ footer {
     }
     .stay-updated nav li {
         float:left;
-        width:92px;
-        /* margin-right:calc((100% - 74.5333px - 61.2333px - 83.7px - 91.5333px)/3); */
-        margin-right:calc((100% - 92px - 92px - 92px - 92px)/3);
-        
+        margin-right:calc((100% - 65px - 52px - 74px - 82px)/3);
+    }
+    .stay-updated nav li:first-child {
+        width: 65px;
+    }
+    .stay-updated nav li:nth-child(2) {
+        width: 52px;
+    }
+    .stay-updated nav li:nth-child(3) {
+        width: 74px;
     }
     .stay-updated nav li:last-child {
         margin-right:0;
+        width:82px;
+    }
+    .stay-updated nav a {
+        padding: 2.5px 5px;
     }
     .stay-updated form {
         position:static;
